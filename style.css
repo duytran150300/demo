@@ -5,15 +5,19 @@
 }
 
 /* header */
+
 .head{
     padding-left: 0;
     padding-right: 0;
-    
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .navrbar {
-    position: absolute;
-    top: 16%;
+    top: 14%;
     background-color: #e0fff5;
 }
 .header_logo .logo{
@@ -21,11 +25,14 @@
     margin-left: 28px;
 
 }
-.header_logout .fa-regular{
+.header_logout .fa-regular, .offcanvas-body .fa-regular{
     font-size: 18px;
     color: green;
     margin-right: 14px;
 
+}
+.offcanvas-body .fa-regular{
+    margin-top: 12px;
 }
 .header_logout .fa-regular:hover{
     cursor: pointer;

@@ -1,0 +1,140 @@
+        /* CSS styles go here */
+
+        @media (max-width: 575px) {
+            /* Styles for screens with width <= 768px */
+            /* .header_navlo,
+            .header_search,
+            .header_logout {
+                display: none;
+            } */
+            .header_logout{
+                display: none;
+            }
+
+            /* header */
+            .btn{
+                border: none;
+                
+            }
+            .btn-check:active+.btn-outline-success:focus, .btn-check:checked+.btn-outline-success:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus, .btn-outline-success:active:focus {
+                box-shadow: none;
+            }
+            .btn-check:focus+.btn-outline-success, .btn-outline-success:focus {
+                box-shadow: none;
+            }
+
+            .btn-outline-success:hover {
+                color: #198754;
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .header_logo .logo {
+                width: 100%;
+                margin-left: -6px;
+            }
+            .header_logout .fa-regular {
+                font-size: 12px;
+                color: green;
+                margin-right: 8px;
+            }
+            .header_logout-logout{
+                padding: 0px 3px 2px 3px;
+                font-size: 12px;
+            }
+            
+            .navrbar {
+                top: 7%;
+                background-color: #e0fff5;
+                width: 100%;
+            }
+
+            .header_search .fa-search{
+                font-size: 14px;
+            }
+            .header_navlo, .header_logout {
+                flex: 1;
+            }
+            .header_search{
+                flex: 2;
+            }
+            .input-group {
+                align-items: center;
+            }
+            .form-control{
+                padding: 0 6px;
+            }
+            thead th{
+                font-size: 14px;
+            }
+            tbody td{
+                font-size: 12px;
+            }
+
+            /* container */
+            
+            .container .title {
+                font-size: 18px;
+            } 
+
+
+            /* footer */
+            .text-black{
+                font-size: 15px;
+            }
+            .infor a {
+                font-size: 12px;
+            }
+            .infor li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 12px;
+            }
+            .contact-info p {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            /* Styles for screens with width <= 576px */
+            /* .header_logo {
+                text-align: center;
+            } */
+            .header_logout{
+                display: none;
+            }
+            .header_navlo, .header_logout {
+                flex: 1;
+            }
+            .header_search{
+                flex: 2;
+            }
+            .header_logo .logo {
+                width: 65%;
+                margin-left: 28px;
+            }
+            .navrbar {
+                top: 11%;
+                background-color: #e0fff5;
+            }
+
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .navrbar {
+                top: 11%;
+                background-color: #e0fff5;
+            }
+        }
+        /* màn 1366 */
+        @media (min-width: 1366px) {
+            
+            .navigation {
+                display: none;
+            }
+            
+        }
+        @media (max-width: 1366px) {
+            
+            .header_logout{
+                display: none !important;
+            }
+        }

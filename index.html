@@ -9,15 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
     <div id="app">
-        <div class="container-fluid head shadow-lg">
-            <header class="header py-3 d-flex justify-content-around align-items-center">
-                <div class="header_navlo d-flex ">
+        <div class="container-fluid head ">
+            <header class="header py-3 d-flex justify-content-around align-items-center shadow-lg mb-5">
+                <div class="header_navlo d-flex align-items-center">
                     <!-- offcavas -->
                     <div class="header_offcanvas my-auto">
                         <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
@@ -49,6 +49,7 @@
                     <div class="header_logo ">
                         <img src="./img/logo xanh (1).png" alt="logo" class="logo ml-3">
                     </div>
+                    <!-- search -->
                 </div>
                 <div class="header_search">
                     <div class="input-group ">
@@ -59,83 +60,111 @@
                     </div>
                 </div>
 
-                <div class="header_logout">
+                <!-- navbar >1366 -->
+                <div class="navigation">
+                    <button class="btn btn-outline-warning " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-brands fa-microsoft"></i></button>
+
+                    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h3 class="offcanvas-title" id="offcanvasScrollingLabel" class="text-center admin">
+                                <i class="fa-solid fa-house"></i>
+                                Admin
+                            </h3>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex justify-content-around ">
+                            <div class=""><button type="button" class="btn btn-success header_logout-logout ">Logout</button></div>
+                            <i class="fa-regular fa-envelope"></i>
+                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- end -->
+                <!-- logout -->
+                <div class="header_logout d-flex justify-content-center align-items-center">
                     <i class="fa-regular fa-envelope"></i>
                     <i class="fa-regular fa-user"></i>
                     <i class="fa-regular fa-bell"></i>
-                    <button type="button" class="btn btn-success">Logout</button>
+                    <button type="button" class="btn btn-success header_logout-logout">Logout</button>
                 </div>
+            </header>
 
         </div>
 
         <!-- container -->
 
         <div class="container my-5 ">
-            <div class="row">
+            <div class="row mt-5">
                 <h2 class="text-center title">DANH SÁCH NHÂN VIÊN</h2>
                 <div class="table-responsive">
                     <table class="table table-hover mt-3 table-bordered table-striped" border="1" cellpadding="0"
                         cellspacing="0">
                         <thead>
                             <tr>
-                                <th scope="col" width=5%>STT</th>
-                                <th scope="col">Mã Nhân Viên</th>
-                                <th scope="col">Họ Tên</th>
-                                <th scope="col">Ảnh</th>
-                                <th scope="col">Sdt</th>
-                                <th scope="col">Địa chỉ </th>
-                                <th scope="col">Ghi chú </th>
+                                <th scope="col-1" width=5%>STT</th>
+                                <th scope="col-1">Mã Nhân Viên</th>
+                                <th scope="col-2">Họ Tên</th>
+                                <th scope="col-2">Ảnh</th>
+                                <th scope="col-2">Địa chỉ</th>
+                                <th scope="col-3">Sđt </th>
+                                <th scope="col-1">Ghi chú </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="justify-content-center align-midle">
                                 <td scope="col">01</td>
                                 <td scope="col">MP001</td>
                                 <td scope="col">Trần Ngọc Duy</td>
-                                <td scope="col"><img src="./img/21b89df72e672a305acabd40a1e80951.jpg" alt=""
-                                        width=100px></td>
-                                <td scope="col">09876543211</td>
-                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col" class="d-flex justify-content-center align-items-center"><img
+                                        src="./img/21b89df72e672a305acabd40a1e80951.jpg" alt="" width=50px></td>
+                                <td scope="col">Văn Trì-Bắc Từ Liêm,Hà Nội</td>
+                                <td scope="col">09876543211 </td>
                                 <td scope="col">Duy</td>
                             </tr>
                             <tr>
                                 <td scope="col">01</td>
                                 <td scope="col">MP001</td>
                                 <td scope="col">Lê Xuân Minh</td>
-                                <td scope="col"><img src="./img/2bd1b05fe569bf96d3389b217daaa776.jpg" alt=""
-                                        width=100px></td>
-                                <td scope="col">09876543211</td>
-                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col" class="d-flex justify-content-center align-items-center"><img
+                                        src="./img/2bd1b05fe569bf96d3389b217daaa776.jpg" alt="" width=50px></td>
+                                <td scope="col">Văn Trì-Bắc Từ Liêm,Hà Nội</td>
+                                <td scope="col">09876543211 </td>
                                 <td scope="col">Minh</td>
                             </tr>
                             <tr>
                                 <td scope="col">01</td>
                                 <td scope="col">MP001</td>
                                 <td scope="col">Trần Văn Đông</td>
-                                <td scope="col"><img src="./img/5e8d595ec8f766c2341e71a7ef063da2.jpg" alt=""
-                                        width=100px></td>
-                                <td scope="col">09876543211</td>
-                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col" class="d-flex justify-content-center align-items-center"><img
+                                        src="./img/5e8d595ec8f766c2341e71a7ef063da2.jpg" alt="" width=50px></td>
+                                <td scope="col">Văn Trì-Bắc Từ Liêm,Hà Nội</td>
+                                <td scope="col">09876543211 </td>
                                 <td scope="col">Đông</td>
                             </tr>
                             <tr>
                                 <td scope="col">01</td>
                                 <td scope="col">MP001</td>
                                 <td scope="col">Hồng Đồng</td>
-                                <td scope="col"><img src="./img/21b89df72e672a305acabd40a1e80951.jpg" alt=""
-                                        width=100px></td>
-                                <td scope="col">09876543211</td>
-                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col" class="d-flex justify-content-center align-items-center"><img
+                                        src="./img/21b89df72e672a305acabd40a1e80951.jpg" alt="" width=50px></td>
+                                <td scope="col">Văn Trì-Bắc Từ Liêm,Hà Nội</td>
+                                <td scope="col">09876543211 </td>
                                 <td scope="col">Đồng</td>
                             </tr>
                             <tr>
                                 <td scope="col">01</td>
                                 <td scope="col">MP001</td>
                                 <td scope="col">TIểu Vũ Hạo</td>
-                                <td scope="col"><img src="./img/2bd1b05fe569bf96d3389b217daaa776.jpg" alt=""
-                                        width=100px></td>
-                                <td scope="col">09876543211</td>
-                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col" class="d-flex justify-content-center align-items-center"><img
+                                        src="./img/2bd1b05fe569bf96d3389b217daaa776.jpg" alt="" width=50px></td>
+                                <td scope="col">Văn Trì-Bắc Từ Liêm,Hà Nội</td>
+                                <td scope="col">09876543211 </td>
                                 <td scope="col">Hạo</td>
                             </tr>
                         </tbody>
@@ -146,67 +175,67 @@
         </div>
         <!-- footer -->
 
-    <footer>
-        <section class="section mt-5 py-5">
-            <div class="container-fluid ">
-                <div class="container">
+        <footer>
+            <section class="section mt-5 py-5">
+                <div class="container-fluid ">
+                    <div class="container">
 
-                    <div class="row justify-content-center align-items-top g-2">
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <h3 class=" text-black fw-500">Thông tin</h3>
-                            <ul class="infor">
-                                <li><a href="#">Về chúng tôi</a></li>
-                                <li><a href="#">Liên hệ</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <h3 class=" text-black fw-500">Dịch vụ</h3>
-                            <ul class="infor">
-                                <li><a href="#">FSEL</a></li>
-                                <li><a href="#">Đào tạo FE</a></li>
-                                <li><a href="#">Đào tạo FE</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <h3 class=" text-black fw-500">Theo dõi</h3>
-                            <ul class="infor">
-                                <li>
-                                    <i class="fa-brands fa-facebook icon-fb"></i>
-                                    <a href="#"> Facebook</a>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-instagram icon-instagram"></i>
-                                    <a href="#"> Instagram</a>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-youtube icon-youtube"></i>
-                                    <a href="#"></i>Youtube</a>
-                                </li>
-                                <li>
-                                    <i class="fa-brands fa-tiktok icon-tiktok"></i>
-                                    <a href="#"> TikTok</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <h3 class=" text-black fw-500">Liên hệ</h3>
-                            <div class="infor contact-info">
-                                <p><i class="fa fa-map-marker"></i>Văn Trì-Minh Khai-Từ Liêm-Hà Nội</p>
-                                <p><i class="fa fa-phone"></i>0339323611</p>
-                                <p><i class="fa fa-envelope"></i>duytnph30928@fpt.edu.vn</p>
+                        <div class="row justify-content-center align-items-top g-2">
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <h3 class=" text-black fw-500">Thông tin</h3>
+                                <ul class="infor">
+                                    <li><a href="#">Về chúng tôi</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <h3 class=" text-black fw-500">Dịch vụ</h3>
+                                <ul class="infor">
+                                    <li><a href="#">FSEL</a></li>
+                                    <li><a href="#">Đào tạo FE</a></li>
+                                    <li><a href="#">Đào tạo FE</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <h3 class=" text-black fw-500">Theo dõi</h3>
+                                <ul class="infor my-3">
+                                    <li>
+                                        <i class="fa-brands fa-facebook icon-fb"></i>
+                                        <a href="#"> Facebook</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-instagram icon-instagram"></i>
+                                        <a href="#"> Instagram</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-youtube icon-youtube"></i>
+                                        <a href="#"></i>Youtube</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-tiktok icon-tiktok"></i>
+                                        <a href="#"> TikTok</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <h3 class=" text-black fw-500">Liên hệ</h3>
+                                <div class="infor contact-info">
+                                    <p><i class="fa fa-map-marker"></i>Văn Trì-Minh Khai-Từ Liêm-Hà Nội</p>
+                                    <p><i class="fa fa-phone"></i>0339323611</p>
+                                    <p><i class="fa fa-envelope"></i>duytnph30928@fpt.edu.vn</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
-
-        </section>
-    </footer>
+            </section>
+        </footer>
 
     </div>
 
-    
+
 </body>
 
 </html>
