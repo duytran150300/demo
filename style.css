@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.head{
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.navrbar {
+    position: absolute;
+    top: 16%;
+    background-color: #e0fff5;
+}
+.header_logo .logo{
+    width: 40%;
+    margin-left: 28px;
+
+}
+.header_logout .fa-regular{
+    font-size: 18px;
+    color: green;
+    margin-right: 14px;
+
+}
+.header_logout .fa-regular:hover{
+    cursor: pointer;
+    color: rgb(4, 109, 4);
+}
+.admin{
+    color: green;
+    text-align: center;
+}
+.nav-link{
+    font-size: 16px;
+    color: rgb(3, 106, 3);
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: rgb(6, 183, 6);
+
+}
+.active{
+    background-color:  #fff;
+}
+/* container */
+.container .title {
+    color: green;
+}
+/* footer */
+.infor{
+    list-style: none;
+    font-size: 18px;
+}
+.fw-500{
+    font-weight: 500;
+}
+.infor a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000cf;
+}
+.infor a:hover{
+    opacity: 0.8;
+}
+.infor i{
+    margin-right: 12px;
+}
+.icon-fb {
+    color: #1b74e4;
+}
+
+.icon-instagram {
+     color: #ff4b20;
+}
+
+.icon-youtube {
+    color: red;
+}
+
+.icon-tiktok {
+    color: black;
+}
+.contact-info i{
+    margin-right: 12px;
+}
+footer {
+    background: #aecdb5;
+}

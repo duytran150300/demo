@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid head shadow-lg">
+            <header class="header py-3 d-flex justify-content-around align-items-center">
+                <div class="header_navlo d-flex ">
+                    <!-- offcavas -->
+                    <div class="header_offcanvas my-auto">
+                        <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                class="fa-solid fa-bars"></i></button>
+                        <div class="offcanvas offcanvas-start navrbar shadow-sm p-3" data-bs-scroll="true"
+                            data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                            aria-labelledby="offcanvasScrollingLabel">
+                            <div class="offcanvas-header justify-content-center admin">
+                                <h3 class="offcanvas-title" id="offcanvasScrollingLabel" class="text-center admin">
+                                    <i class="fa-solid fa-house"></i>
+                                    Admin
+                                </h3>
+                                <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button> -->
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="">Trang chủ</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="">Quản lý nhân viên</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">Quản lý khách hàng</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">Quản lý danh mục</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">Khác</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- logo -->
+                    <div class="header_logo ">
+                        <img src="./img/logo xanh (1).png" alt="logo" class="logo ml-3">
+                    </div>
+                </div>
+                <div class="header_search">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-outline-success" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header_logout">
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <button type="button" class="btn btn-success">Logout</button>
+                </div>
+
+        </div>
+
+        <!-- container -->
+
+        <div class="container my-5 ">
+            <div class="row">
+                <h2 class="text-center title">DANH SÁCH NHÂN VIÊN</h2>
+                <div class="table-responsive">
+                    <table class="table table-hover mt-3 table-bordered table-striped" border="1" cellpadding="0"
+                        cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th scope="col" width=5%>STT</th>
+                                <th scope="col">Mã Nhân Viên</th>
+                                <th scope="col">Họ Tên</th>
+                                <th scope="col">Ảnh</th>
+                                <th scope="col">Sdt</th>
+                                <th scope="col">Địa chỉ </th>
+                                <th scope="col">Ghi chú </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="col">01</td>
+                                <td scope="col">MP001</td>
+                                <td scope="col">Trần Ngọc Duy</td>
+                                <td scope="col"><img src="./img/21b89df72e672a305acabd40a1e80951.jpg" alt=""
+                                        width=100px></td>
+                                <td scope="col">09876543211</td>
+                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col">Duy</td>
+                            </tr>
+                            <tr>
+                                <td scope="col">01</td>
+                                <td scope="col">MP001</td>
+                                <td scope="col">Lê Xuân Minh</td>
+                                <td scope="col"><img src="./img/2bd1b05fe569bf96d3389b217daaa776.jpg" alt=""
+                                        width=100px></td>
+                                <td scope="col">09876543211</td>
+                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col">Minh</td>
+                            </tr>
+                            <tr>
+                                <td scope="col">01</td>
+                                <td scope="col">MP001</td>
+                                <td scope="col">Trần Văn Đông</td>
+                                <td scope="col"><img src="./img/5e8d595ec8f766c2341e71a7ef063da2.jpg" alt=""
+                                        width=100px></td>
+                                <td scope="col">09876543211</td>
+                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col">Đông</td>
+                            </tr>
+                            <tr>
+                                <td scope="col">01</td>
+                                <td scope="col">MP001</td>
+                                <td scope="col">Hồng Đồng</td>
+                                <td scope="col"><img src="./img/21b89df72e672a305acabd40a1e80951.jpg" alt=""
+                                        width=100px></td>
+                                <td scope="col">09876543211</td>
+                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col">Đồng</td>
+                            </tr>
+                            <tr>
+                                <td scope="col">01</td>
+                                <td scope="col">MP001</td>
+                                <td scope="col">TIểu Vũ Hạo</td>
+                                <td scope="col"><img src="./img/2bd1b05fe569bf96d3389b217daaa776.jpg" alt=""
+                                        width=100px></td>
+                                <td scope="col">09876543211</td>
+                                <td scope="col">Văn Trì - Bắc Từ Liêm - Hà Nội </td>
+                                <td scope="col">Hạo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- footer -->
+
+    <footer>
+        <section class="section mt-5 py-5">
+            <div class="container-fluid ">
+                <div class="container">
+
+                    <div class="row justify-content-center align-items-top g-2">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h3 class=" text-black fw-500">Thông tin</h3>
+                            <ul class="infor">
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h3 class=" text-black fw-500">Dịch vụ</h3>
+                            <ul class="infor">
+                                <li><a href="#">FSEL</a></li>
+                                <li><a href="#">Đào tạo FE</a></li>
+                                <li><a href="#">Đào tạo FE</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h3 class=" text-black fw-500">Theo dõi</h3>
+                            <ul class="infor">
+                                <li>
+                                    <i class="fa-brands fa-facebook icon-fb"></i>
+                                    <a href="#"> Facebook</a>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-instagram icon-instagram"></i>
+                                    <a href="#"> Instagram</a>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-youtube icon-youtube"></i>
+                                    <a href="#"></i>Youtube</a>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-tiktok icon-tiktok"></i>
+                                    <a href="#"> TikTok</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h3 class=" text-black fw-500">Liên hệ</h3>
+                            <div class="infor contact-info">
+                                <p><i class="fa fa-map-marker"></i>Văn Trì-Minh Khai-Từ Liêm-Hà Nội</p>
+                                <p><i class="fa fa-phone"></i>0339323611</p>
+                                <p><i class="fa fa-envelope"></i>duytnph30928@fpt.edu.vn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </footer>
+
+    </div>
+
+    
+</body>
+
+</html>
