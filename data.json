@@ -1,0 +1,43 @@
+[
+    {
+        "code": "FSEL01",
+        "name": "Trần Ngọc Duy",
+        "img": "./img/21b89df72e672a305acabd40a1e80951.jpg",
+        "address": "Văn Trì Bắc Từ Liêm Hà Nội",
+        "phone": "09782374732",
+        "note": ""
+    }, {
+        "code": "FSEL02",
+        "name": "Nguyễn Văn A",
+        "img": "./img/2bd1b05fe569bf96d3389b217daaa776.jpg",
+        "address": "Văn Trì Bắc Từ Liêm Hà Nội",
+        "phone": "09782374732",
+        "note": ""
+    }, 
+    {
+        "code": "FSEL03",
+        "name": "Trần Văn B",
+        "img": "./img/5e8d595ec8f766c2341e71a7ef063da2.jpg",
+        "address": "Văn Trì Bắc Từ Liêm Hà Nội",
+        "phone": "09782374732",
+        "note": ""
+    }, 
+    {
+        "code": "FSEL04",
+        "name": "Trần Duyên",
+        "img": "./img/21b89df72e672a305acabd40a1e80951.jpg",
+        "address": "Văn Trì Bắc Từ Liêm Hà Nội",
+        "phone": "09782374732",
+        "note": ""
+    },
+    {
+        "code": "FSEL05",
+        "name": "Lê Xuân Minh",
+        "img": "./img/2bd1b05fe569bf96d3389b217daaa776.jpg",
+        "address": "Văn Trì Bắc Từ Liêm Hà Nội",
+        "phone": "09782374732",
+        "note": ""
+    }
+
+]
+
